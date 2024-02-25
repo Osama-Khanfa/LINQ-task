@@ -78,14 +78,14 @@ class Program
         }
 
 
-        Console.WriteLine("Display the list of students sorted by their names in ascending order.");
-        List<Student> ascendingOrder =
-            (from student in students
-             orderby student ascending
-             select student).ToList();
 
+
+
+        Console.WriteLine("Display the list of students sorted by their names in ascending order.");
+
+        List<Student> ascendingOrder = students.OrderBy(student => student.Name).ToList();
         foreach (Student s in ascendingOrder){
-            Console.WriteLine("Name: {0}, Age: {1}", s.Name, s.ID);
+            Console.WriteLine("Name: {0}, Age: {1}", s.Name, s.Age);
 
         }
 
@@ -95,11 +95,8 @@ class Program
         Console.WriteLine("______________________________________________________________________\n");
 
         Console.WriteLine("Display the names of students who are older than 20 years.");
-        List<Student> greaterThan20 =
-            (from student in students
-             where student.Age > 20
-             select student).ToList();
 
+        List<Student> greaterThan20 = students.Where(s => s.Age > 20).ToList();
         foreach (Student s in greaterThan20)
         {
             Console.WriteLine("Name: {0}, Age: {1}", s.Name, s.Age);
@@ -108,15 +105,34 @@ class Program
 
 
 
+        Console.WriteLine("______________________________________________________________________\n");
+
+        Console.WriteLine("Calculate the average age of all students");
+
+        double avg = students.Select(s => s.Age).Average();
+        Console.WriteLine("The average age is: {0}", avg);
+
 
 
         Console.WriteLine("______________________________________________________________________\n");
 
-        Console.WriteLine("Calculate the average age of all students");
-        double avg =
-            (from student in students
-             select student.Age).Average();
-        Console.WriteLine("The average age is: {0}", avg);
+        Console.WriteLine("Display the results of the join operation showing the StudentId, Name, CourseId, and CourseName for each matching pair");
+
+        var queryResult = from StudentCourse in studentCourses
+                          join student in students on StudentCourse.StudentID equals student.ID
+                          join course in courses on StudentCourse.CourseID equals course.ID
+                          select new
+                          {
+                              StudentID = StudentCourse.StudentID,
+                              StudentName = student.Name,
+                              CourseID = StudentCourse.CourseID,
+                              CourseName = course.Name
+                          };
+        foreach(var result in queryResult)
+        {
+            Console.WriteLine("Student ID: {0}, Student Name: {1}, Course ID: {2}, Course Name: {3}", result.StudentID, result.StudentName, result.CourseID, result.CourseName);
+
+        }
 
     }
 }
