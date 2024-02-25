@@ -1,0 +1,15 @@
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/bin/Debug/net7.0/1st task LINQ
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/bin/Debug/net7.0/1st task LINQ.deps.json
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/bin/Debug/net7.0/1st task LINQ.runtimeconfig.json
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/bin/Debug/net7.0/1st task LINQ.dll
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/bin/Debug/net7.0/1st task LINQ.pdb
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/1st task LINQ.csproj.AssemblyReference.cache
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/1st task LINQ.GeneratedMSBuildEditorConfig.editorconfig
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/1st task LINQ.AssemblyInfoInputs.cache
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/1st task LINQ.AssemblyInfo.cs
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/1st task LINQ.csproj.CoreCompileInputs.cache
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/1st task LINQ.dll
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/refint/1st task LINQ.dll
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/1st task LINQ.pdb
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/1st task LINQ.genruntimeconfig.cache
+/Users/osamakhanfa/development/training/1st task LINQ/1st task LINQ/obj/Debug/net7.0/ref/1st task LINQ.dll
